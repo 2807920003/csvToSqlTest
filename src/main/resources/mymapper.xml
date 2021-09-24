@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kk.sqlMapper">
+    <select id="selectTest" resultType="User">
+        select * from db_usr
+    </select>
+    <insert id="addUser" >
+        insert into ASD(usr,password)
+        values(#{usr},#{password})
+    </insert>
+    <insert id="addDiease" >
+        insert into [Diease] ([name],[desc])
+         values (#{name},#{desc})
+    </insert>
+</mapper>
